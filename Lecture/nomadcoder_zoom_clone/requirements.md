@@ -1,4 +1,4 @@
-# Express 첫 만남
+# Express, Pug 등 예습
 
 - 프론트엔드 스터디까지 시간이 많이 남았으니 백엔드도 공부하고 싶어서,
 노마드코더의 줌 만들기 인강을 들어보려고 한다.
@@ -59,6 +59,38 @@ app.get('/', (req, res) => {
 - 그러면 서버사이드 렌더링이다.
 
 에게? 말로만 듣던 서버사이드 렌더링이 겨우 이거라고?
+
+
+
+## What is Pug
+
+html을 편하게 작성하게 해준다.
+```js
+doctype html
+html(lang='en')
+  head
+    title Pug
+    script(type='text/javascript').
+      foo = true;
+      bar = function () {};
+      if (foo) {
+      bar(1 + 5)
+      }
+  body
+    h1 Pug - node template engine
+    #container.col
+      p You are amazing
+      p
+        | Pug is a terse and simple
+        | templating language with a
+        | strong focus on performance
+        | and powerful features.
+```
+- index.pug 파일에 이렇게 작성 후
+- index.html로 변환하는 형식으로 사용하면 된다.
+- express에서 아예 pug를 받아들이도록 하는 방법 도 있는 것 같다.
+
+
 
 
 ## References
