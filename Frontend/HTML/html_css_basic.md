@@ -1,4 +1,4 @@
-# 드림코딩 유튭 보면서 html 기초 필기
+# 드림코딩 유튭 보면서 html/css 지식 필기
 
 ## HTML 구조
 - 주로 header, main contents, sidebar, footer 이런 큰 박스들로 나눠진다.
@@ -28,3 +28,14 @@ https://youtu.be/i0FN-OwJ7QI
 
 [CSS Properties 참고 사이트](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index)
 [CSS 게임으로 공부하기! 사이트](https://flukeout.github.io/)
+
+## %와 vw, vh
+
+- %의 의미: **부모**의 몇 퍼센트 만큼을 차지한다는 뜻. ex) height:100%
+- vw, vh: viewport-height라는 뜻. **사용자에게 보이는 스크린 크기**를 기준으로 함. 100vh는 스크린을 100% 채우겠다는 뜻.
+
+[UI 색깔 찾기 좋은 사이트 COLOR TOOL](https://m2.material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=CE93D8)
+
+## flexbox
+
+[flexbox 연습하기 좋은 웹게임](https://flexboxfroggy.com/#ko)
