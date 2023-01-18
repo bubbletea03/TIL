@@ -38,4 +38,31 @@ https://youtu.be/i0FN-OwJ7QI
 
 ## flexbox
 
+- 세로축(반대축) 정렬 : `align-items`
+- 예를 들어 `align-items: center` 하면 세로축(반대축)으로 딱 가운데 맞춰짐
+
 [flexbox 연습하기 좋은 웹게임](https://flexboxfroggy.com/#ko)
+
+## 각종 속성들
+
+- 리스트 태그에서 `list-style: none` 하면 그 ● 모양 없앨 수 있음
+
+
+## CSS 변수
+
+```css
+:root {
+    --text-color: ~~;
+    --background-color: ~~;
+    --accent-color: ~~;
+}
+```
+이렇게 써놓고
+
+```css
+a {
+    color: var(--text-color);
+}
+```
+이런 식으로 사용하면 됨.
+- 사용자 정의 변수(?)는 앞에 --를 붙이는 게 컨벤션인듯.
