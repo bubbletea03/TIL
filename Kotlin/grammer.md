@@ -31,11 +31,44 @@
 ### 클래스
 
 ```java
-class Person(a: String, b: String) {
+class Person(var a: String, var b: String) {
   init {
     println("${a} ${b}")
   }
 }
 ```
 - class 선언 줄에 생성 변수를 지정할 수 있다.
-  - ∴ JAVA와 다르게 `this.x = x`를 할 필요없다. 
+  - ∴ 이렇게 선언하면 JAVA와 다르게 `this.x = x`를 할 필요없다.
+
+### 다중 생성자 (오버로딩)
+
+```java
+class Person(var firstName: String, var lastName: String) {
+    var age: Int? = null
+    var eyeColor: String? = null
+    
+    // Secondary Constructor
+    constructor(firstName: String, lastName: String, age: Int) : this(firstName, lastName)  {
+        this.age = if(age > 0) age else throw IllegalArgumentException("Age must be greater than zero")
+    }
+ 
+    // Secondary Constructor
+    constructor(firstName: String, lastName: String, age: Int, eyeColor: String) : this(firstName, lastName, age)  {
+        this.eyeColor = eyeColor
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+## 상식
+- 코틀린에서도 멤버 변수를 `프로퍼티`라고 부른다.
+- 코틀린에서 모든 클래스는 기본적으로 `final`이다.
+  - ∴ 상속을 허용하려면 `open` 키워드를 붙여야 한다.
+- 간단하게 타입 체크가 가능하다. `is` 키워드를 사용하면 된다.
