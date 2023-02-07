@@ -59,6 +59,11 @@ class Person(var firstName: String, var lastName: String) {
 }
 ```
 
+## Collection
+- List, Set, Map
+- 기본적으로 Immutable이다. mutable로 선언해야 한다.
+- `mutableListOf<String>("a", "b")` 이런 식으로.
+
 
 
 
